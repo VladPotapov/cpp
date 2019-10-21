@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Server\data\htdocs\cpp\python_c++\path1\my_code\TXL_tasks\TXL_tasks\main.cpp(7,9): error C2561:  main: функция должна возвращать значение
+C:\Server\data\htdocs\cpp\python_c++\path1\my_code\TXL_tasks\TXL_tasks\main.cpp(3): message :   см. объявление "main"
