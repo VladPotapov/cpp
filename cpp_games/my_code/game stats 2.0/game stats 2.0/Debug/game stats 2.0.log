@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Server\data\htdocs\cpp\cpp_games\my_code\game stats 2.0\game stats 2.0\Source.cpp(33,23): warning C4305:  =: усечение из "__int64" в "unsigned int"
+C:\Server\data\htdocs\cpp\cpp_games\my_code\game stats 2.0\game stats 2.0\Source.cpp(33,10): warning C4309:  =: усечение константного значения
+  game stats 2.0.vcxproj -> C:\Server\data\htdocs\cpp\cpp_games\my_code\game stats 2.0\Debug\game stats 2.0.exe

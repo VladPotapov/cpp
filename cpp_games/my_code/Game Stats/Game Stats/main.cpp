@@ -30,5 +30,12 @@ int main() {
 
 	cout << "\nbonus: " << bonus << endl;
 
+	int a = 0;
+	int b, c = a;
+	b = 1;
+	c = 2;
+
+	cout << a << " : " << b << " : " << c << endl;
+
 	return 0;
 }
