@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Server\data\htdocs\cpp\cpp_games\my_code\designers_network\designers_network\main.cpp(8,7): warning C4101: success: неиспользованная локальная переменная
+  designers_network.vcxproj -> C:\Server\data\htdocs\cpp\cpp_games\my_code\designers_network\Debug\designers_network.exe
