@@ -33,4 +33,6 @@ int main() {
 			cout << "вам понадобилось " << tries << " попыток\n";
 		}
 	} while (guess != secretNumber);
+
+	return 0;
 }
