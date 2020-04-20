@@ -10,13 +10,15 @@ int main() {
 	cout << "если б не было\n";
 	cout << "            такой земли -\n";
 	cout << "                       Москва...\n";
-	cout << "       ( * )" << endl;
-	cout << "   ( * ) O ( * )" << endl;
-	cout << "( * ) ( * ) ( * )" << endl;
-	cout << " \\ X X X X X /" << endl;
-	cout << "  \\ X  X  X /" << endl;
-	cout << "   \\   X   /" << endl;
-	cout << "        V" << endl;
+	
+	
+	cout << "     (*)" << endl;
+	cout << "   (*)O(*)" << endl;
+	cout << "  (*)(*)(*)" << endl;
+	cout << "   \\XXXXX/" << endl;
+	cout << "    \\XXX/" << endl;
+	cout << "     \\X/" << endl;
+	cout << "      V" << endl;
 
 	return 0;
 }
