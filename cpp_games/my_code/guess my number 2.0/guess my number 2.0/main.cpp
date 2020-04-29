@@ -1,36 +1,28 @@
 #include <iostream>
 #include <cstdlib>
-#include <Windows.h>
+#include <ctime>
 
 using namespace std;
 
 int main() {
-	SetConsoleOutputCP(1251);
-	SetConsoleCP(1251);
-
-	int number;
+	setlocale(LC_ALL, "Russian");
+	int my_number;
+	cout << "Загадайте число от 0 до 100: ";
+	cin >> my_number;
 	int comp_number = 0;
-	int attempts = 0;
-
-	cout << "Загадайте число от 1 до 100 ";
-	cin >> number;
-
-	while (number != comp_number) {
-		attempts++;
+	int popitka = 0;
+	while (my_number != comp_number) {
 		comp_number = rand() % 100 + 1;
-		if (comp_number < number) {
-			cout << comp_number << endl;
-			cout << "маленькое число" << endl;
+		popitka = popitka + 1;
+		cout << "Попытка " << popitka << endl;
+		if (comp_number > my_number) {
+			cout << "Число " << comp_number << " больше " << my_number << endl;
 		}
-		else if (comp_number > number) {
-			cout << comp_number << endl;
-			cout << "большое число" << endl;
-		}
-		else {
-			cout << "Это число " << comp_number << endl;
-			cout << "Попыток потребовашихся компьютеру: " << attempts;
+		if (comp_number < my_number) {
+			cout << "Число " << comp_number << " меньше " << my_number << endl;
 		}
 	}
-
+	cout << "Копьютер угадал число за " << popitka << " попыток" << endl;
+	cout << "Это число " << comp_number << endl;
 	return 0;
 }
