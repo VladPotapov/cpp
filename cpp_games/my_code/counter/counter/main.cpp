@@ -17,11 +17,20 @@ int main() {
 	for (int i = 0; i <= 50; i += 5) {
 		cout << i << " ";
 	}
-	cout << "\n\nподсчет с вложенными циклами for:\n";
+	cout << "\n\nподсчет с статическим оператором:\n";
 	int num = 0;
 	for (; num < 10;) {
 		cout << num << " ";
-		num++;
+		++num;
+	}
+	cout << "\n\nподсчет с вложенными циклами for:\n";
+	const int ROWS = 5;
+	const int COLUMNS = 3;
+	for (int i = 0; i < ROWS; ++i) {
+		for (int j = 0; j < COLUMNS; ++j) {
+			cout << i << j << " ";
+		}
+		cout << endl;
 	}
 	return 0;
 }
