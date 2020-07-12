@@ -26,9 +26,10 @@ int main() {
 	cout << "\n\nподсчет с вложенными циклами for:\n";
 	const int ROWS = 5;
 	const int COLUMNS = 3;
+	const int TABS = 2;
 	for (int i = 0; i < ROWS; ++i) {
 		for (int j = 0; j < COLUMNS; ++j) {
-			cout << i << j << " ";
+			cout << i << " : " << j << " ; ";
 		}
 		cout << endl;
 	}

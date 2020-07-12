@@ -1,14 +1,14 @@
 ﻿  Source.cpp
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xstring(2887,1): warning C4124: использование __fastcall с проверкой стека неэффективно
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xstring(2872): message : во время компиляции функции-члена класс шаблон "std::basic_string<char32_t,std::char_traits<char32_t>,std::allocator<char32_t>> &std::basic_string<char32_t,std::char_traits<char32_t>,std::allocator<char32_t>>::assign(const _Elem *const ,const unsigned int)"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\xstring(2987,1): warning C4124: использование __fastcall с проверкой стека неэффективно
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\xstring(2972): message : во время компиляции функции-члена класс шаблон "std::basic_string<char32_t,std::char_traits<char32_t>,std::allocator<char32_t>> &std::basic_string<char32_t,std::char_traits<char32_t>,std::allocator<char32_t>>::assign(const _Elem *const ,const unsigned int)"
           with
           [
               _Elem=char32_t
           ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xstring(2320): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::basic_string<char32_t,std::char_traits<char32_t>,std::allocator<char32_t>> &std::basic_string<char32_t,std::char_traits<char32_t>,std::allocator<char32_t>>::assign(const _Elem *const ,const unsigned int)"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\xstring(2326): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::basic_string<char32_t,std::char_traits<char32_t>,std::allocator<char32_t>> &std::basic_string<char32_t,std::char_traits<char32_t>,std::allocator<char32_t>>::assign(const _Elem *const ,const unsigned int)"
           with
           [
               _Elem=char32_t
           ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xstring(4573): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "std::basic_string<char32_t,std::char_traits<char32_t>,std::allocator<char32_t>>"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\xstring(4677): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "std::basic_string<char32_t,std::char_traits<char32_t>,std::allocator<char32_t>>"
   TXL.vcxproj -> C:\Server\data\htdocs\cpp\python_c++\path1\my_code\TXL\Debug\TXL.exe
