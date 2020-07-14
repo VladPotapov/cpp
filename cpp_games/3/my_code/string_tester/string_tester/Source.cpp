@@ -17,6 +17,23 @@ int main() {
 	cout << "Символ в позиции 0: " << phrase[0] << endl;
 	cout << "Изменение символа в позиции " << endl;
 	phrase[0] = 'L';
-
+	cout << "Эта фраза звучит сейчас как: " << phrase << endl;
+	for (unsigned int i = 0; i < phrase.size(); ++i) {
+		cout << "Символ на позиции" << i << " = " << phrase[i] << endl;
+	}
+	cout << "Последовательность 'Over' начинается в местоположении\n";
+	cout << phrase.find("Over") << endl;
+	if (phrase.find("eggplant") == string::npos) {
+		cout << "баклажана нет во фразе\n\n";
+	}
+	phrase.erase(4, 5);
+	cout << "Эта фраза звучит сейчас: " << phrase << endl;
+	phrase.erase(4);
+	cout << "Эта фраза звучит сейчас: " << phrase << endl;
+	phrase.erase();
+	cout << "Эта фраза звучит сейчас: " << phrase << endl;
+	if (phrase.empty()) {
+		cout << "Этой фразы больше нет.\n";
+	}
 	return 0;
 }
