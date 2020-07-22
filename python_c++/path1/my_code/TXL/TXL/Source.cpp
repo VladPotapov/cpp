@@ -33,6 +33,8 @@ int main() {
 	//прямоугольник
 	txRectangle(100, 50, 150, 130);
 
+	txSetColor(TX_RED, 3);
+	txSetFillColor(TX_WHITE);
 	//окружность
 	txCircle(100, 250, 50);
 
