@@ -22,5 +22,14 @@ int main() {
 
 	cout << endl;
 	cout << phrase.find("L") << endl;
+
+	if (phrase.find("eggpland") == string::npos) {
+		cout << "'eggpland' is not in the phrase.\n\n";
+	}
+
+	int location = phrase.find('L', 3);
+
+	cout << location << endl;
+
 	return 0;
 }
