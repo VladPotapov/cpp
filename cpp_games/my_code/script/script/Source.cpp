@@ -31,5 +31,17 @@ int main() {
 
 	cout << location << endl;
 
+	phrase.erase(4, 5);
+	cout << phrase << endl;
+	phrase.erase(4);
+	cout << phrase << endl;
+
+	//возвращает true если строка пустая
+	if (phrase.empty()) {
+		cout << "True" << endl;
+	}
+	else {
+		cout << "False" << endl;
+	}
 	return 0;
 }
