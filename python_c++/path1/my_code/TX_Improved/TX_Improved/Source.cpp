@@ -30,6 +30,19 @@ int main() {
 	txSetFillColor(TX_YELLOW);
 
 	txLine(385, 135, 385, 120);
+	txLine(385, 135, 375, 150);
+	txLine(385, 135, 395, 150);
+	txLine(385, 125, 375, 135);
+	txLine(385, 125, 400, 120);
+	txCircle(385, 115, 6);
+
+	txSetFillColor(TX_TRANSPARENT);
+	txLine(400, 75, 400, 150);
+	txRectangle(400, 75, 450, 115);
+	txSelectFont("Times New Roman", 20);
+	txTextOut(425, 85, "C++");
+
+	txTextCursor(false);
 
 	return 0;
 }
