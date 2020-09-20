@@ -1,0 +1,16 @@
+﻿  main.cpp
+C:\Server\data\htdocs\cpp\python_c++\path1\my_code\TX_function_parametrs\TX_function_parametrs\main.cpp(30,108): warning C4244: аргумент: преобразование "unsigned __int64" в "double", возможна потеря данных
+C:\Server\data\htdocs\cpp\python_c++\path1\my_code\TX_function_parametrs\TX_function_parametrs\main.cpp(30,63): warning C4244: аргумент: преобразование "unsigned __int64" в "double", возможна потеря данных
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2979,1): warning C4124: использование __fastcall с проверкой стека неэффективно
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2964): message : во время компиляции функции-члена класс шаблон "std::basic_string<char32_t,std::char_traits<char32_t>,std::allocator<char32_t>> &std::basic_string<char32_t,std::char_traits<char32_t>,std::allocator<char32_t>>::assign(const _Elem *const ,const unsigned int)"
+          with
+          [
+              _Elem=char32_t
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(2321): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::basic_string<char32_t,std::char_traits<char32_t>,std::allocator<char32_t>> &std::basic_string<char32_t,std::char_traits<char32_t>,std::allocator<char32_t>>::assign(const _Elem *const ,const unsigned int)"
+          with
+          [
+              _Elem=char32_t
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\xstring(4666): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "std::basic_string<char32_t,std::char_traits<char32_t>,std::allocator<char32_t>>"
+  TX_function_parametrs.vcxproj -> C:\Server\data\htdocs\cpp\python_c++\path1\my_code\TX_function_parametrs\Debug\TX_function_parametrs.exe
