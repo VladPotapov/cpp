@@ -1,8 +1,8 @@
-#include "c:/Server/data/htdocs/cpp/libs/TX/TXLib.h"
+#include "C:/Server/data/htdocs/cpp/libs/TX/TXLib.h"
 
-//void DrawMan(int x, int y, int sizeX, int sizeY, COLORREF color, double hand = 0, double legs = 0, double head = 0, double twist = 0);
+void DrawMan(int x, int y, int sizeX, int sizeY, COLORREF color, double hand = 0, double legs = 0, double head = 0, double twist = 0);
 void DrawEarth(int x, int y, int sizeX, int SizeY, COLORREF color);
-//void DrawFlag(int x, int y, int sizeX, int sizeY, COLORREF color, COLORREF bkColor);
+void DrawFlag(int x, int y, int sizeX, int sizeY, COLORREF color, COLORREF bkColor);
 void DrawHello(int x, int y, const char* text, int size, COLORREF color);
 void DrawFrame(int sizeX, int sizeY, int size, COLORREF color);
 
@@ -15,18 +15,54 @@ int main() {
 	DrawHello(400, 480, "Hello world", 60, TX_LIGHTGREEN);
 	DrawEarth(400, 300, 400, 300, TX_LIGHTCYAN);
 
+	DrawFlag(400, 150, 50, 75, TX_YELLOW, TX_TRANSPARENT);
+	DrawMan(385, 150, 20, 40, TX_YELLOW, 0, 0, 0, 0);
+
 	return 0;
+}
+
+void DrawMan(int x, int y, int sizeX, int sizeY, COLORREF color, double hand, double legs, double head, double twist) {
+	txSetColor(color);
+	txSetFillColor(color);
+
+	txLine(x, y - (0.35 + twist) * sizeY, x, y - 0.7 * sizeY);
+
+	txLine(x, y - (0.35 + twist) * sizeY, x - (0.5 + legs) * sizeX, y);
+	txLine(x, y - (0.35 + twist) * sizeY, x + (0.5 + legs) + sizeX, y);
+
+	txLine(x, y - 0.65 * sizeY, x - sizeX / 2, y - 0.4 * sizeY);
+	txLine(x, y - 0.65 * sizeY, x + sizeX / 1.2, y - (0.7 + hand) * sizeY);
+
+	txCircle(x, y - sizeY + (0.3 + hand) * sizeX, 0.3 * sizeX);
 }
 
 void DrawEarth(int x, int y, int sizeX, int sizeY, COLORREF color) {
 	txSetColor(color);
 
-	int r = static_cast<unsigned __int64>(sizeX) / 2;
-
+	int r = sizeX / 2;
 	while (r >= 0) {
-		txEllipse(x - r, y - static_cast<unsigned __int64>(sizeY) / 2, x + r, y + static_cast<unsigned __int64>(sizeY) / 2);
+		txEllipse(x - r, y - sizeY / 2, x + r, sizeY / 2);
 		r -= sizeX / 9;
 	}
+
+	r = sizeY / 2;
+	while (r >= 0) {
+		txEllipse(x - sizeX / 2, y - r, x + sizeX / 2, y + r);
+		r -= sizeY / 6;
+	}
+
+	txLine(x - sizeX / 2, y, x + sizeX / 2, y);
+}
+
+void DrawFlag(int x, int y, int sizeX, int sizeY, COLORREF color, COLORREF bkColor) {
+	txSetColor(color);
+	txSetFillColor(bkColor);
+
+	txLine(x, y, x, y - sizeY);
+	txRectangle(x, y - sizeY / 2, x + sizeX, y - sizeY);
+
+	txSelectFont("Times New Roman", 20);
+	txTextOut(x + sizeX / 2, y - sizeY * 7 / 8, "C++");
 }
 
 void DrawHello(int x, int y, const char* text, int size, COLORREF color) {
@@ -39,7 +75,7 @@ void DrawHello(int x, int y, const char* text, int size, COLORREF color) {
 void DrawFrame(int sizeX, int sizeY, int size, COLORREF color) {
 	txSetColor(color);
 	txSetFillColor(TX_TRANSPARENT);
-	txRectangle(size, size, static_cast<unsigned __int64>(sizeX) - size, static_cast<unsigned __int64>(sizeY) - size);
+	txRectangle(size, size, sizeX - size, sizeY - size);
 
 	//вызовет 2 предупреждения
 	//txRectangle(size, size, sizeX - size, sizeY - size);

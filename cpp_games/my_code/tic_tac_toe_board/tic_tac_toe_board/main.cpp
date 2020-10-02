@@ -25,7 +25,7 @@ int main() {
 
 	cout << "\n'X' перемещается в пустое место. \n\n";
 	board[1][0] = 'X';
-	cout << "Now the tic tac toe board is:\n";
+	cout << "Теперь доска для крестиков ноликов это:\n";
 
 	for (int i = 0; i < ROWS; i++) {
 		for (int j = 0; j < COLUMNS; j++) {
@@ -33,5 +33,8 @@ int main() {
 		}
 		cout << endl;
 	}
+
+	cout << "\n'X' wins!" << endl;
+
 	return 0;
 }
